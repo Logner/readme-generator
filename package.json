@@ -1,0 +1,21 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A commandline based Node Script that uses inquirer to generate a readme file for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Logner/readme-generator.git"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "Kumash Patel",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
