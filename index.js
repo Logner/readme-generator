@@ -19,7 +19,6 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'Provide your email address for the contact me section.',
-        default: 'None'
     },
     {
         type: 'input',
@@ -35,20 +34,18 @@ const questions = [
         type: 'input',
         name: 'projectRepository',
         message: 'Provide the URL for the github repository for this project.',
-        default: 'None'
     },
     {
         type: 'input',
         name: 'projectDeploy',
         message: 'Provide the deployment URL for this project.',
-        default: "None"
     },
     // Installation
     {
         type: 'input',
-        name: 'InstallGuide',
+        name: 'installGuide',
         message: 'Provide a description for how to install the project.',
-        default: "Run the command: ```npm install```"
+        default: "Run the command: \`\`\`npm install\`\`\`"
     },
 
     // Usage
@@ -56,7 +53,6 @@ const questions = [
         type: 'input',
         name: 'usageGuide',
         message: 'Provide a usage guide.',
-        default: "None"
     },
 
     // Contribution
@@ -64,7 +60,7 @@ const questions = [
         type: 'input',
         name: 'contribute',
         message: 'Provide details on how to contribute to the project.',
-        default: "None"
+        default: "Please follow the [Contributor Covenant](https://www.contributor-covenant.org/)"
     },
 
     // test instructions
@@ -72,7 +68,7 @@ const questions = [
         type: 'input',
         name: 'testing',
         message: 'Provide details on how to run tests on the code.',
-        default: "None"
+        default: "Tests can be found in the test folder."
     },
 
     // License Dropdown, list
@@ -82,10 +78,13 @@ const questions = [
         name: 'licensing',
         message: 'Select from an opensource license for this code.',
         choices: ['GNU AGPL V3', 'GNU GPL V3', 'GNU LGPL V3', 'Mozilla Public Licence 2.o', 'Apache Licence', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+    },
+    {
+        type: 'input',
+        name: 'screenshot',
+        message: "Provide a path to the screenshot from the readme file's final location (leave empty if no screenshot)",
+        default: './assets/img/screenshot.png'
     }
-
-    // Table of Contents
-
 ];
 
 
