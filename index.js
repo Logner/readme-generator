@@ -1,5 +1,6 @@
 var inquirer = require('inquirer');
-var mdGen = require('./utils/generateMarkdown')
+var mdGen = require('./utils/generateMarkdown');
+var fs = require('fs');
 
 // array of questions for user
 const questions = [
@@ -77,7 +78,7 @@ const questions = [
         type: 'list',
         name: 'licensing',
         message: 'Select from an opensource license for this code.',
-        choices: ['GNU AGPL V3', 'GNU GPL V3', 'GNU LGPL V3', 'Mozilla Public Licence 2.o', 'Apache Licence', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['GNU AGPL V3', 'GNU GPL V3', 'GNU LGPL V3', 'Mozilla Public License 2.0', 'Apache License', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
     },
     {
         type: 'input',
@@ -96,7 +97,11 @@ function writeToFile(data) {
         name: 'fileName',
         message: 'Provide a filename for the markdown file to write to.',
         default: 'README'
-    }).then(answer => console.log(answer.fileName, readmeString))
+    }).then(answer => {
+        fs.writeFile(answer.fileName+'.md', readmeString, 'UTF-8', function (err) {
+            if (err) return console.log(err);
+          });
+    })
 }
 
 // function to initialize program
