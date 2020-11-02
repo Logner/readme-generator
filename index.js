@@ -89,8 +89,8 @@ const questions = [
 
 
 // function to write README file
-function writeToFile(fileName, data) {
-    readmeString = mdGen.generateMarkdown(data);
+function writeToFile(data) {
+    readmeString = mdGen(data);
     inquirer.prompt({
         type: "input",
         name: 'fileName',
@@ -102,7 +102,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
 
-    inquirer.prompt(questions).then(answers => console.log(answers));
+    inquirer.prompt(questions).then(answers => writeToFile(answers));
 
 }
 
