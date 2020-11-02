@@ -1,5 +1,5 @@
 
-  # [readme-generator](https://www.github.com/Logner/readme-generator)
+  # [Readme Generator](https://www.github.com/Logner/readme-generator)
 
   ## Description 
   This is a node js based readme markdown generator. It uses inquirer to collect user responses via commandline and formats the collected prompt information into professionally formatted readme files.
