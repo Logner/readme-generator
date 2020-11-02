@@ -33,7 +33,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'projectRepository',
+        name: 'projectRepo',
         message: 'Provide the URL for the github repository for this project.',
     },
     {
@@ -78,7 +78,7 @@ const questions = [
         type: 'list',
         name: 'licensing',
         message: 'Select from an opensource license for this code.',
-        choices: ['GNU AGPL V3', 'GNU GPL V3', 'GNU LGPL V3', 'Mozilla Public License 2.0', 'Apache License', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['AGPLv3', 'GPLv3', 'LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_License', 'MIT_License', 'Boost_Software_License_1.0', 'Unlicense']
     },
     {
         type: 'input',

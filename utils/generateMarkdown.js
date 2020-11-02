@@ -43,7 +43,9 @@ function generateMarkdown(data) {
 
   ## Contact
 
-  This project is made by [${data.username}](https://www.github.com/${data.username}/), you can send an email to them by clicking [here](mailto://${data.email})
+  This project is made by [${data.username}](https://www.github.com/${data.username}/), you can send an email to them by clicking [here](mailto:${data.email})
+
+  The project's repository and source code can be found [here](${data.projectRepo}) and it can be found deployed [here](${data.projectDeploy}).
 `;
 }
 

@@ -27,7 +27,7 @@
   
   ## License
 
-  ![license](https://img.shields.io/badge/License-Apache Licence-informational)
+  ![license](https://img.shields.io/badge/License-Apache_License-informational)
   
   This project is licensed under Apache Licence. You can read more about it [here](https://choosealicense.com/licenses/).
   
@@ -41,4 +41,4 @@
 
   ## Contact
 
-  This project is made by [Logner](https://www.github.com/Logner/), you can send an email to them by clicking [here](mailto://kumash123@gmail.com)
+  This project is made by [Logner](https://www.github.com/Logner/), you can send an email to them by clicking [here](mailto:kumash123@gmail.com)
