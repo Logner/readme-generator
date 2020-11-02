@@ -18,7 +18,7 @@
   
   ## Usage 
   
-  Run the command: ```index.js``` and answer the prompts as best as you can.
+  Run the command: ```node index.js``` and answer the prompts as best as you can.
 
   A screenshot of the application can be found below:
   
